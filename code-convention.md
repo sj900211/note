@@ -114,24 +114,31 @@
 ---
 # 4. Controller
 > ## 1. URI
-> Controller 에서 URI 를 상단에 명시할 때 공통 URI 만 명시해서 사용
+> Controller 에서 사용되는 URI 는 Abstract Class 파일에 public static final String 으로 선언해서 사용한다.
+>> URI 를 정의한 클래스
+>> ``` java
+>> public abstract class ClassName {
+>>     public static final String uriCommunity = "/community";
+>>     public static final String uriCommunityBoard = uriCommunity + "/board";
+>>     public static final String uriCommunityBoardId = uriCommunity + "/board/{id}";
+>> 
+>> }
+>> ```
+> Controller
 > ``` java
 > @RestController
 > @RequiredArgsConstructor
 > @RequestMapping("test")
-> public class TestContoller {
->     private final TestService testService;
+> public class ContollerName {
+>     private final TestService service;
 >     
->     private final String uriBoard = "/board";
->     private final String uriNotice = uriBoard + "/notice";
->     
->     @GetMapping(uriNotice)
->     public ResponseEntity<?> getNoticeList(/*...*/) {
+>     @GetMapping(uriCommunityBoard)
+>     public ResponseEntity<JsonNode> getBoardPage(/*...*/) {
 >         // ...
 >     }
 >     
->     @GetMapping(uriNotice + "/{id}")
->     public ResponseEntity<?> getNotice(/*...*/) {
+>     @GetMapping(uriCommunityBoardId)
+>     public ResponseEntity<JsonNode> getBoard(/*...*/) {
 >         // ...
 >     }
 >     
