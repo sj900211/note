@@ -129,7 +129,6 @@
 >> ``` java
 >> @RestController
 >> @RequiredArgsConstructor
->> @RequestMapping("test")
 >> public class ContollerName {
 >>     private final TestService service;
 >>     
