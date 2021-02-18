@@ -124,26 +124,27 @@
 >> 
 >> }
 >> ```
-> Controller
-> ``` java
-> @RestController
-> @RequiredArgsConstructor
-> @RequestMapping("test")
-> public class ContollerName {
->     private final TestService service;
->     
->     @GetMapping(uriCommunityBoard)
->     public ResponseEntity<JsonNode> getBoardPage(/*...*/) {
->         // ...
->     }
->     
->     @GetMapping(uriCommunityBoardId)
->     public ResponseEntity<JsonNode> getBoard(/*...*/) {
->         // ...
->     }
->     
-> }
-> ```
+>> ---
+>> Controller
+>> ``` java
+>> @RestController
+>> @RequiredArgsConstructor
+>> @RequestMapping("test")
+>> public class ContollerName {
+>>     private final TestService service;
+>>     
+>>     @GetMapping(uriCommunityBoard)
+>>     public ResponseEntity<JsonNode> getBoardPage(/*...*/) {
+>>         // ...
+>>     }
+>>     
+>>     @GetMapping(uriCommunityBoardId)
+>>     public ResponseEntity<JsonNode> getBoard(/*...*/) {
+>>         // ...
+>>     }
+>>     
+>> }
+>> ```
 ---
 # 5. Repository
 > ## 1. 조건(Where) 에 관한 고찰
