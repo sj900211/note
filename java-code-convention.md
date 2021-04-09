@@ -28,7 +28,7 @@
 > 들여쓰기는 2 개의 빈 칸 `space` 를 들여쓰기 단위로 사용한다.  
 > ``` java
 > public void handlerExample() {
->   System.out.println("Example");
+> ··System.out.println("Example");
 > }
 > ```
 > 체인 메서드를 사용하는 중에 줄을 나누거나 소괄호 `()` 안에서 줄을 나눌때  
@@ -57,9 +57,9 @@
 >>> public void handlerExample() {
 >>>   System.out
 >>>       .println(
->>>            "Hello. "
->>>                + "and"
->>>                + "Welcome"
+>>>           "Hello. "
+>>>               + "and"
+>>>               + "Welcome"
 >>>       );
 >>> }
 >>> ```
@@ -71,10 +71,10 @@
 >>>     String middleName, String lastName) {
 >>>   System.out
 >>>       .println(
->>>            "Hello, "
->>>                + firstName
->>>                + middleName
->>>                + lastName
+>>>           "Hello, "
+>>>               + firstName
+>>>               + middleName
+>>>               + lastName
 >>>       );
 >>> }
 >>> ```
@@ -90,8 +90,8 @@
 >>> public void handlerExample() {
 >>>   System.out
 >>>       .println(
->>>            "Hello." + "and"
->>>                + "Welcome"
+>>>           "Hello." + "and"
+>>>               + "Welcome"
 >>>       );
 >>> }
 >>> ```
