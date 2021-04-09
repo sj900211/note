@@ -15,7 +15,7 @@
 > 
 > IDE 는 IntelliJ 를 사용하는 것을 기준으로 작성.  
 > 이 문서에 정의되지 않은 항목에 대해서는 다음 링크에서 확인해서 적용한다.  
-> [Sun & Oracle Java Code Convention](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)  
+> [Sun & Oracle Java Code Convention](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)
 > [Google Java Code Convention](https://google.github.io/styleguide/javaguide.html)
 
 ## 용어 참고
@@ -33,15 +33,15 @@
 > ```
 > 체인 메서드를 사용하는 중에 줄을 나누거나 소괄호 `()` 안에서 줄을 나눌때  
 > 또는 문자에서 줄을 나누거나 Statements 중 줄을 나눌때  
-> 줄을 나뉜 후 2 번의 들여쓰기를 사용한다.
+> 줄을 나뉜 후 2 번의 들여쓰기 `8 개의 빈칸` 를 사용한다.
 > ``` java
 > public void handlerExample() {
->   System.out
->       .println(
->           "Hello"
->               + " "
->               + "World"
->       );
+> ··System.out
+> ······.println(
+> ··········"Hello"
+> ··············+ " "
+> ··············+ "World"
+> ······);
 > }
 > ```
 - ## 한 줄의 길이
@@ -264,9 +264,9 @@
 >>> }
 >>> ```
 >> - #### Single
->>> Block 주석과 의미와 작성방법이 같다.  
->>> Single 주석은 뒤따라 오는 코드와 같은 들여쓰기를 해서 작성한다.  
->>> 줄을 나누게 되면 Block 주석으로 변경한다.  
+>>> Block 주석과 의미와 작성방법이 같다.
+>>> Single 주석은 뒤따라 오는 코드와 같은 들여쓰기를 해서 작성한다.
+>>> 줄을 나누게 되면 Block 주석으로 변경한다.
 >>> ``` java
 >>> public String handlerExample(String name) {
 >>>   /* parameter 로 넘어온 값이 null 일 경우 Exception 을 발생시킨다. */
@@ -278,9 +278,9 @@
 >>> }
 >>> ```
 >> - #### Trailing
->>> Trailing 주석은 코드 끝에 작성한다.  
->>> 한 줄 코드에 대한 설명을 작성한다.  
->>> 줄을 나누게 되면 Block 주석으로 변경한다.  
+>>> Trailing 주석은 코드 끝에 작성한다.
+>>> 한 줄 코드에 대한 설명을 작성한다.
+>>> 줄을 나누게 되면 Block 주석으로 변경한다.
 >>> ``` java
 >>> public String handlerExample(String name) {
 >>>   String result = Optional.ofNullable(name)
