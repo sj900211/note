@@ -264,9 +264,9 @@
 >>> }
 >>> ```
 >> - #### Single
->>> Block 주석과 의미와 작성방법이 같다.
->>> Single 주석은 뒤따라 오는 코드와 같은 들여쓰기를 해서 작성한다.
->>> 줄을 나누게 되면 Block 주석으로 변경한다.
+>>> Block 주석과 의미와 작성방법이 같다.  
+>>> Single 주석은 뒤따라 오는 코드와 같은 들여쓰기를 해서 작성한다.  
+>>> 줄을 나누게 되면 Block 주석으로 변경한다.  
 >>> ``` java
 >>> public String handlerExample(String name) {
 >>>   /* parameter 로 넘어온 값이 null 일 경우 Exception 을 발생시킨다. */
@@ -278,9 +278,9 @@
 >>> }
 >>> ```
 >> - #### Trailing
->>> Trailing 주석은 코드 끝에 작성한다.
->>> 한 줄 코드에 대한 설명을 작성한다.
->>> 줄을 나누게 되면 Block 주석으로 변경한다.
+>>> Trailing 주석은 코드 끝에 작성한다.  
+>>> 한 줄 코드에 대한 설명을 작성한다.  
+>>> 줄을 나누게 되면 Block 주석으로 변경한다.  
 >>> ``` java
 >>> public String handlerExample(String name) {
 >>>   String result = Optional.ofNullable(name)
