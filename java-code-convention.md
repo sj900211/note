@@ -15,7 +15,7 @@
 > 
 > IDE 는 IntelliJ 를 사용하는 것을 기준으로 작성.  
 > 이 문서에 정의되지 않은 항목에 대해서는 다음 링크에서 확인해서 적용한다.  
-> [Sun & Oracle Java Code Convention](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)
+> [Sun & Oracle Java Code Convention](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)  
 > [Google Java Code Convention](https://google.github.io/styleguide/javaguide.html)
 
 ## 용어 참고
